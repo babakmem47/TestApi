@@ -1,0 +1,13 @@
+﻿@model TestApi.ViewModels.GigViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@foreach (var gig in Model.Gig)
+{
+    <ul>
+        <li>
+            @gig.Id &nbsp; @gig.DateTime @gig.Genre.Name @gig.Venue
+        </li>
+    </ul>
+}
